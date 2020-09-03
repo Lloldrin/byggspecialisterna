@@ -5,6 +5,9 @@
 --fire-engine-red: #d50b26;
 --ivory: #f6f7eb;
 */
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
 
 body {
     margin: 0;
@@ -63,6 +66,10 @@ body {
     align-items: center;
 }
 
+.contact-form-container {
+    background-color: #38aecc;
+}
+
 /* --- Text Styling --- */
 
 p {
@@ -93,6 +100,7 @@ p {
 
 .section-header {
     margin: 1rem;
+    font-size: 2.5rem;
 }
 
 .card-header {
@@ -117,4 +125,49 @@ p {
     width: 15rem;
     border-radius: 50%;
     object-fit: contain;
+}
+
+/* --- Form Styling --- */
+
+.contact-form {
+    margin: 2rem 0rem 2rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-text-input,
+.contact-textarea-input {
+    color: #555555;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffffaa;
+}
+
+.contact-text-input {
+    margin: 0.2rem;
+    padding: 1.25rem;
+}
+
+.contact-text-input:last-of-type {
+    margin-bottom: 0.4rem;
+}
+
+.contact-text-input:hover,
+.contact-textarea-input:hover {
+    background-color: #ffffffcc;
+    transition: 200ms ease-in-out;
+}
+
+.contact-text-input:focus,
+.contact-textarea-input:focus {
+    background-color: #fff;
+    transition: 200ms ease-in-out;
+    outline: none;
+}
+
+
+.contact-textarea-input {
+    height: 8rem;
+    width: 100%;
+    resize: vertical;
 }
