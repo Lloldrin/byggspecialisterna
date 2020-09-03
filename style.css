@@ -7,10 +7,9 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 *, *:before, *:after {
     box-sizing: border-box;
-  }
+}
 
 body {
     margin: 0;
@@ -50,11 +49,7 @@ body {
     flex: 1 1 auto;
 }
 
-.column-big {
-    display: flex;
-    flex-direction: column;
-    flex-basis: auto;
-    flex: 1;
+.column-a {
     align-items: flex-start
 }
 
@@ -68,7 +63,7 @@ body {
 }
 
 .hero-right {
-    background-color: #38aeccaa;
+    background-color: #38aecccc;
     border-top-left-radius: 20rem;
 }
 
@@ -98,7 +93,7 @@ body {
     margin-right: 1rem;
 }
 
-.justify-evenly{
+.justify-evenly {
     justify-content: space-evenly;
 }
 
@@ -125,6 +120,10 @@ body {
 
 .map-container {
     padding: 1rem;
+}
+
+iframe {
+    border-radius: 2px;
 }
 
 /* --- Text Styling --- */
@@ -176,17 +175,15 @@ a.footer-a:after {
     left: 0;
     -webkit-transition: 500ms ease;
     transition: 500ms ease;
-  }
-  
-a.footer-a:hover:after { 
-    width: 100%; 
-  }
+}
+
+a.footer-a:hover:after {
+    width: 100%;
+}
 
 /* --- Header Styling --- */
 
-.section-header,
-.subheader,
-.card-header {
+.section-header, .subheader, .card-header {
     color: #38aecc;
     text-transform: uppercase;
     font-family: 'Calibri', sans-serif;
@@ -247,8 +244,7 @@ a.footer-a:hover:after {
     width: 80%;
 }
 
-.contact-text-input,
-.contact-textarea-input {
+.contact-text-input, .contact-textarea-input {
     color: #555555;
     border: none;
     border-radius: 10px;
@@ -262,20 +258,18 @@ a.footer-a:hover:after {
     margin: 0.5rem;
 }
 
-.contact-text-input:hover,
-.contact-textarea-input:hover {
+.contact-text-input:hover, .contact-textarea-input:hover {
     background-color: #ffffffcc;
     transition: 200ms ease-in-out;
 }
 
-.contact-text-input:focus,
-.contact-textarea-input:focus {
+.contact-text-input:focus, .contact-textarea-input:focus {
     background-color: #fff;
     transition: 200ms ease-in-out;
     outline: none;
 }
 
-.contact-text-input:valid{
+.contact-text-input:valid {
     background: ;
     transition: 200ms ease-in-out;
 }
@@ -290,7 +284,6 @@ a.footer-a:hover:after {
 .contact-submit-btn {
     height: 3.5rem;
     margin: 0.5rem;
-    vertical-align: middle;
     border: 1px solid #ffffff00;
     border-radius: 10px;
     width: 50%;
@@ -300,7 +293,6 @@ a.footer-a:hover:after {
     text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
-    align-content: center;
 }
 
 .contact-submit-btn:hover {
