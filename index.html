@@ -149,34 +149,47 @@
 
         <!-- Kontaktformulär -->
         <div class="row contact-form-container">
-            <div class="column">
+            <div class="row justify-center">
+                <h1 class="section-header white-text">Kontakta Oss</h1>
+            </div>
+            <div class="column align-center">
                 <form class="contact-form" action="submit">
 
                     <div class="row">
                         <div class="column">
-                            <input class="contact-text-input" type="text" placeholder="Förnamn">
+                            <input class="contact-text-input" type="text" placeholder="Förnamn" required>
                         </div>
                         <div class="column">
-                            <input class="contact-text-input" type="text" placeholder="Efternamn">
+                            <input class="contact-text-input" type="text" placeholder="Efternamn" required>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="column">
-                            <input class="contact-text-input" type="text" placeholder="Epost">
+                            <input class="contact-text-input" type="email" placeholder="Epost" required>
                         </div>
                         <div class="column">
-                            <input class="contact-text-input" type="text" placeholder="Telefon">
+                            <input class="contact-text-input" type="tel" placeholder="Telefon" required>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="column">
-                            <textarea class="contact-textarea-input"></textarea>
+                        <div class="column contact-textarea-container">
+                            <textarea class="contact-textarea-input" placeholder="Meddelande" required></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column contact-button-container">
+                            <button class="contact-submit-button" type="submit">Skicka in</button>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="column">Test</div>
+            <div class="column">
+                <div class="text-container">
+                    <h2 class="subheader white-text">Vi finns här för dina idéer</h2>
+                    <p class="white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione doloremque dolorem voluptate distinctio aliquam pariatur similique ea, animi quidem laborum quisquam odit suscipit ipsa ipsam, quibusdam quia quasi accusamus minima explicabo earum dolores facere? Impedit nobis ipsa maiores ex hic ea consequuntur eligendi cumque aperiam possimus, temporibus quos dignissimos, illo minima illum, iure est tempore iusto. Voluptatibus veniam aut odio.</p>
+                </div>
+            </div>
         </div>
 
         <div class="row">

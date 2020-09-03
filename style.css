@@ -12,6 +12,11 @@
 body {
     margin: 0;
 }
+
+hr {
+    margin: 0;
+}
+
 /* --- flex css --- */
 
 .page-container {
@@ -56,6 +61,7 @@ body {
 .card {
     width: 15rem;
     margin: 1rem;
+    margin-bottom: 2rem;
 }
 
 .justify-center {
@@ -68,6 +74,10 @@ body {
 
 .contact-form-container {
     background-color: #38aecc;
+}
+
+.contact-textarea-container {
+    margin: 0.5rem;
 }
 
 /* --- Text Styling --- */
@@ -86,6 +96,10 @@ p {
     padding: 0 0.5rem;
     margin: 0;
     font-size: 0.9rem;
+}
+
+.white-text {
+    color: #fff !important;
 }
 
 /* --- Header Styling --- */
@@ -130,9 +144,10 @@ p {
 /* --- Form Styling --- */
 
 .contact-form {
-    margin: 2rem 0rem 2rem 2rem;
+    margin: 2rem 0;
     justify-content: center;
     align-items: center;
+    width: 80%
 }
 
 .contact-text-input,
@@ -144,12 +159,8 @@ p {
 }
 
 .contact-text-input {
-    margin: 0.2rem;
     padding: 1.25rem;
-}
-
-.contact-text-input:last-of-type {
-    margin-bottom: 0.4rem;
+    margin: 0.5rem;
 }
 
 .contact-text-input:hover,
@@ -165,9 +176,17 @@ p {
     outline: none;
 }
 
-
 .contact-textarea-input {
     height: 8rem;
+    padding: 1.25rem;
     width: 100%;
     resize: vertical;
+}
+
+.contact-submit-button {
+    height: 3rem;
+    margin: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    width: 50%
 }
