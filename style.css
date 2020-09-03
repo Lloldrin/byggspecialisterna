@@ -46,6 +46,11 @@ hr {
     height: 80vh
 }
 
+.hero-right {
+    background-color: #38aecc80;
+    border-top-left-radius: 20rem;
+}
+
 .navbar-container {
     height: 10vh;
 }
@@ -126,11 +131,12 @@ p {
 /* --- Img Styling --- */
 
 .img-medium-container {
-    height: 70%;
+    max-height: 70%;
 }
 
 .img-medium {
-    max-width: 100%;
+    width: 100%;
+    max-height: 300px;
     object-fit: cover;
 }
 
