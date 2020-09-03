@@ -13,8 +13,13 @@ body {
     margin: 0;
 }
 
-hr {
-    margin: 0;
+.hr-teal {
+    width: 80%;
+    border: 0;
+    height: 1px;
+    background-color: #38aecc10;
+    background-image: linear-gradient(to right, #38aecc30, #38aecc, #38aecc30);
+    margin: 1rem auto;
 }
 
 /* --- flex css --- */
@@ -67,6 +72,14 @@ hr {
     width: 15rem;
     margin: 1rem;
     margin-bottom: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.justify-evenly{
+    justify-content: space-evenly;
 }
 
 .justify-center {
@@ -131,12 +144,12 @@ p {
 /* --- Img Styling --- */
 
 .img-medium-container {
-    max-height: 70%;
+    max-height: 25rem;
 }
 
 .img-medium {
     width: 100%;
-    max-height: 300px;
+    max-height: 25rem;
     object-fit: cover;
 }
 
