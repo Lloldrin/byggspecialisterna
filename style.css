@@ -31,6 +31,25 @@ body {
 
 /* --- Container Styling --- */
 
+#hero-container {
+    background-image: url("img/hero_image.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh
+}
+
+.navbar-container {
+    height: 10vh;
+}
+
+.hero-text-container {
+    height: 70vh
+}
+
+.text-container {
+    margin: auto 3.5rem;
+}
+
 .card {
     width: 15rem;
     margin: 1rem;
@@ -52,7 +71,6 @@ p {
 }
 
 .text-container {
-    margin: auto 3.5rem;
     font-size: 1.2rem;
     font-weight: 300;
 }
