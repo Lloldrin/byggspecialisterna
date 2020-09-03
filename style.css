@@ -16,10 +16,9 @@ body {
 .hr-teal {
     width: 80%;
     border: 0;
-    height: 1px;
-    background-color: #38aecc10;
+    height: 0.75px;
     background-image: linear-gradient(to right, #38aecc30, #38aecc, #38aecc30);
-    margin: 1rem auto;
+    margin: auto;
 }
 
 /* --- flex css --- */
