@@ -33,8 +33,7 @@ body {
     background-color: #fff;
 }
 
-.footer-row,
-.row {
+.footer-row, .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -157,6 +156,11 @@ body {
 }
 
 .align-center {
+    align-items: center;
+}
+
+.footer-row {
+    justify-content: center;
     align-items: center;
 }
 
@@ -289,8 +293,7 @@ a.footer-a:hover:after, a.card-a-header:hover:after {
     margin: 0.5rem auto;
 }
 
-.hero-header,
-.hero-header-small {
+.hero-header, .hero-header-small {
     margin-bottom: 0;
     font-family: 'Bebas Neue', cursive;
     font-weight: normal;
@@ -306,8 +309,7 @@ a.footer-a:hover:after, a.card-a-header:hover:after {
     font-size: 2.5rem;
 }
 
-.hero-subheader,
-.hero-subheader-small {
+.hero-subheader, .hero-subheader-small {
     margin-left: 25%;
     margin-top: 0;
     font-family: 'Cambria', serif;
@@ -315,8 +317,7 @@ a.footer-a:hover:after, a.card-a-header:hover:after {
     font-size: 1.5rem;
 }
 
-.hero-header-small,
-.hero-subheader-small {
+.hero-header-small, .hero-subheader-small {
     display: none;
 }
 
@@ -480,34 +481,43 @@ a.footer-a:hover:after, a.card-a-header:hover:after {
 
 /* --- Media Queries --- */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 770px) {
     .row {
-      flex-direction: column;
+        flex-direction: column;
     }
-
     .hero-right {
         display: none;
     }
-
     .hero-text-container-small {
         display: block;
     }
-
-    .hero-header-small,
-    .hero-subheader-small {
+    .hero-header-small, .hero-subheader-small {
         display: block;
     }
-
     .footer-container {
         padding-top: 2rem;
         height: 100%;
     }
-
     .address-column {
         order: 1;
     }
-
     h2.subheader.white-text {
         margin-top: 0
     }
-  }
+}
+
+@media screen and (max-width: 575px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        background-color: #38aeccaa;
+        padding: 1rem;
+        border-top-left-radius: 10px;
+    }
+    .navbtn {
+        padding: 0.95rem 1rem;
+        font-size: 1rem;
+    }
+}
