@@ -504,6 +504,9 @@ a.footer-a:hover:after, a.card-a-header:hover:after {
     h2.subheader.white-text {
         margin-top: 0
     }
+    .modal {
+        display:none;
+    }
 }
 
 @media screen and (max-width: 575px) {
