@@ -5,13 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
     <title>Byggspecialisterna</title>
 </head>
 
 <body>
     <div class="page-container">
 
-        <!-- Hero Image och Navigation -->
+        <div class="navbar">
+            <a class="navbtn" href="#">Home</a>
+            <a class="navbtn" href="#vara-tjanster">Våra Tjänster</a>
+            <a class="navbtn" href="#om-oss">Om Oss</a>
+            <a class="navbtn" href="#kontakt">Kontakt</a>
+        </div>
+
+        <!-- Hero Image  -->
         <div class="row" id="hero-container">
             <div class="column">
             </div>
@@ -126,7 +134,8 @@
         <div class="row justify-evenly">
 
             <div class="card">
-                <a href="#tidigare-projekt-1"><img class="card-img" src="img/tidigare_projekt_1.jpg" alt="Person i varselväst"></a>
+                <a href="#tidigare-projekt-1"><img class="card-img" src="img/tidigare_projekt_1.jpg"
+                        alt="Person i varselväst"></a>
                 <div class="card-header-container">
                     <a class="card-a-header" href="#tidigare-projekt-1">Frösö Park</a>
                 </div>
@@ -136,7 +145,8 @@
             </div>
 
             <div class="card">
-                <a href="#tidigare-projekt-2"><img class="card-img" src="img/tidigare_projekt_2.jpg" alt="Snickare som kapar bräda"></a>
+                <a href="#tidigare-projekt-2"><img class="card-img" src="img/tidigare_projekt_2.jpg"
+                        alt="Snickare som kapar bräda"></a>
                 <div class="card-header-container">
                     <a class="card-a-header" href="#tidigare-projekt-2">Hornsö Strand</a>
                 </div>
@@ -157,259 +167,268 @@
                     perferendis. Nesciunt dolor, voluptatum omnis vitae molestiae et eum quae?</p>
             </div>
 
-        <!-- Kontaktformulär -->
-        <div class="row contact-form-container">
-            <div class="row justify-center">
-                <h1 class="section-header white-text">Kontakta Oss</h1>
-            </div>
-            <div class="column align-center">
-                <form class="contact-form" action="submit">
-
-                    <div class="row">
-                        <div class="column">
-                            <input class="contact-text-input" type="text" placeholder="Förnamn" required>
-                        </div>
-                        <div class="column">
-                            <input class="contact-text-input" type="text" placeholder="Efternamn" required>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="column">
-                            <input class="contact-text-input" type="email" placeholder="Epost" required>
-                        </div>
-                        <div class="column">
-                            <input class="contact-text-input" type="tel" placeholder="Telefon" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column contact-textarea-container">
-                            <textarea class="contact-textarea-input" placeholder="Meddelande" required></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column contact-button-container">
-                            <button class="contact-submit-btn">Skicka in</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-            <div class="column">
-                <div class="text-container">
-                    <h2 class="subheader white-text">Vi finns här för dina idéer</h2>
-                    <p class="white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione doloremque
-                        dolorem voluptate distinctio aliquam pariatur similique ea, animi quidem laborum quisquam odit
-                        suscipit ipsa ipsam, quibusdam quia quasi accusamus minima explicabo earum dolores facere?
-                        Impedit
-                        nobis ipsa maiores ex hic ea consequuntur eligendi cumque aperiam possimus, temporibus quos
-                        dignissimos, illo minima illum, iure est tempore iusto. Voluptatibus veniam aut odio.</p>
+            <!-- Kontaktformulär -->
+            <div class="row contact-form-container">
+                <div class="row justify-center">
+                    <h1 class="section-header white-text" id="kontakt">Kontakta Oss</h1>
                 </div>
-            </div>
-        </div>
+                <div class="column align-center">
+                    <form class="contact-form" action="submit">
 
-        <footer class="footer-container footer-text white-text">
-            <div class="row">
-                <div class="column justify-center">
-                    <span class="quote white-text">Vårt Löfte:</span>
-                    <span class="quote white-text">Optimerade lösningar mot våra kunder för bästa möjliga
-                        resultat</span>
-                </div>
-                <div class="column justify-center">
-                    <div>
-                        <div class="row justify-center">
-                            <h2 class="subheader white-text">Adress</h2>
+                        <div class="row">
+                            <div class="column">
+                                <input class="contact-text-input" type="text" placeholder="Förnamn" required>
+                            </div>
+                            <div class="column">
+                                <input class="contact-text-input" type="text" placeholder="Efternamn" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="column">
+                                <input class="contact-text-input" type="email" placeholder="Epost" required>
+                            </div>
+                            <div class="column">
+                                <input class="contact-text-input" type="tel" placeholder="Telefon" required>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="row">
-                                <div class="column text-right mr-1">Adress:</div>
-                                <div class="column">Rådhusgatan 112</div>
-                            </div>
-
-                            <div class="row">
-                                <div class="column text-right mr-1">Postnummer:</div>
-                                <div class="column">831 45 Östersund</div>
-                            </div>
-
-                            <div class="row">
-                                <div class="column text-right mr-1">Telefon:</div>
-                                <div class="column column-a"><a class="footer-a" href="tel:123-456-7890">08 123 456
-                                        7890</a></div>
-                            </div>
-
-                            <div class="row">
-                                <div class="column text-right mr-1">Epost:</div>
-                                <div class="column column-a"><a class="footer-a"
-                                        href="mailto:info@byggspecialisterna.se">info@byggspecialisterna.se</a></div>
-                            </div>
-
-                            <div class="row">
-                                <div class="column text-right mr-1">Kontorstider:</div>
-                                <div class="column">07.00 - 16.00</div>
+                            <div class="column contact-textarea-container">
+                                <textarea class="contact-textarea-input" placeholder="Meddelande" required></textarea>
                             </div>
                         </div>
-                        <div class="row mb-2"></div>
-                    </div>
+                        <div class="row">
+                            <div class="column contact-button-container">
+                                <button class="contact-submit-btn">Skicka in</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="column">
-                    <div class="map-container">
-                        <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"
-                            marginwidth="0"
-                            src="https://maps.google.com/maps?width=100%25&amp;height=250&amp;hl=en&amp;q=R%C3%A5dhusgatan%20112%20%C3%96stersund+(Byggspecialisterna)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                    <div class="text-container">
+                        <h2 class="subheader white-text">Vi finns här för dina idéer</h2>
+                        <p class="white-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+                            doloremque
+                            dolorem voluptate distinctio aliquam pariatur similique ea, animi quidem laborum quisquam
+                            odit
+                            suscipit ipsa ipsam, quibusdam quia quasi accusamus minima explicabo earum dolores facere?
+                            Impedit
+                            nobis ipsa maiores ex hic ea consequuntur eligendi cumque aperiam possimus, temporibus quos
+                            dignissimos, illo minima illum, iure est tempore iusto. Voluptatibus veniam aut odio.</p>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
 
-    <div class="modal" id="tjanster-1">
+            <footer class="footer-container footer-text white-text">
+                <div class="row">
+                    <div class="column justify-center">
+                        <span class="quote white-text">Vårt Löfte:</span>
+                        <span class="quote white-text">Optimerade lösningar mot våra kunder för bästa möjliga
+                            resultat</span>
+                    </div>
+                    <div class="column justify-center">
+                        <div>
+                            <div class="row justify-center">
+                                <h2 class="subheader white-text">Adress</h2>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="column text-right mr-1">Adress:</div>
+                                    <div class="column">Rådhusgatan 112</div>
+                                </div>
 
-        <div class="modal-inner">
+                                <div class="row">
+                                    <div class="column text-right mr-1">Postnummer:</div>
+                                    <div class="column">831 45 Östersund</div>
+                                </div>
 
-            <div class="modal-photo">
-                <img src="img/tjanster_1.jpg" alt="">
-            </div>
+                                <div class="row">
+                                    <div class="column text-right mr-1">Telefon:</div>
+                                    <div class="column column-a"><a class="footer-a" href="tel:123-456-7890">08 123 456
+                                            7890</a></div>
+                                </div>
 
-            <a class="modal-close" href="#vara-tjanster">X</a>
+                                <div class="row">
+                                    <div class="column text-right mr-1">Epost:</div>
+                                    <div class="column column-a"><a class="footer-a"
+                                            href="mailto:info@byggspecialisterna.se">info@byggspecialisterna.se</a>
+                                    </div>
+                                </div>
 
-            <div class="modal-text">
-                <h1 class="modal-header">Projektledning</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
-                    molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
-                    praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa nemo
-                    ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
-                    Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
-                    tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
-                    soluta?</p>
+                                <div class="row">
+                                    <div class="column text-right mr-1">Kontorstider:</div>
+                                    <div class="column">07.00 - 16.00</div>
+                                </div>
+                            </div>
+                            <div class="row mb-2"></div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="map-container">
+                            <iframe width="100%" height="250" frameborder="0" scrolling="no" marginheight="0"
+                                marginwidth="0"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=250&amp;hl=en&amp;q=R%C3%A5dhusgatan%20112%20%C3%96stersund+(Byggspecialisterna)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="modal" id="tjanster-1">
+
+            <div class="modal-inner">
+
+                <div class="modal-photo">
+                    <img src="img/tjanster_1.jpg" alt="">
+                </div>
+
+                <a class="modal-close" href="#vara-tjanster">X</a>
+
+                <div class="modal-text">
+                    <h1 class="modal-header">Projektledning</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
+                        molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
+                        praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa
+                        nemo
+                        ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
+                        Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
+                        tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
+                        soluta?</p>
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+        <div class="modal" id="tjanster-2">
 
-    <div class="modal" id="tjanster-2">
+            <div class="modal-inner">
 
-        <div class="modal-inner">
+                <div class="modal-photo">
+                    <img src="img/tjanster_2.jpg" alt="">
+                </div>
 
-            <div class="modal-photo">
-                <img src="img/tjanster_2.jpg" alt="">
-            </div>
+                <a class="modal-close" href="#vara-tjanster">X</a>
 
-            <a class="modal-close" href="#vara-tjanster">X</a>
+                <div class="modal-text">
+                    <h1 class="modal-header">Bygg</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
+                        molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
+                        praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa
+                        nemo
+                        ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
+                        Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
+                        tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
+                        soluta?</p>
+                </div>
 
-            <div class="modal-text">
-                <h1 class="modal-header">Bygg</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
-                    molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
-                    praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa nemo
-                    ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
-                    Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
-                    tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
-                    soluta?</p>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="modal" id="tjanster-3">
-
-        <div class="modal-inner">
-
-            <div class="modal-photo">
-                <img src="img/tjanster_3.jpg" alt="">
-            </div>
-
-            <a class="modal-close" href="#vara-tjanster">X</a>
-
-            <div class="modal-text">
-                <h1 class="modal-header">Logistik</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
-                    molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
-                    praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa nemo
-                    ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
-                    Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
-                    tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
-                    soluta?</p>
             </div>
 
         </div>
 
-    </div>
+        <div class="modal" id="tjanster-3">
 
-    <div class="modal" id="tidigare-projekt-1">
+            <div class="modal-inner">
 
-        <div class="modal-inner">
+                <div class="modal-photo">
+                    <img src="img/tjanster_3.jpg" alt="">
+                </div>
 
-            <div class="modal-photo">
-                <img src="img/tidigare_projekt_1.jpg" alt="">
-            </div>
+                <a class="modal-close" href="#vara-tjanster">X</a>
 
-            <a class="modal-close" href="#tidigare-projekt">X</a>
+                <div class="modal-text">
+                    <h1 class="modal-header">Logistik</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
+                        molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
+                        praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa
+                        nemo
+                        ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
+                        Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
+                        tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
+                        soluta?</p>
+                </div>
 
-            <div class="modal-text">
-                <h1 class="modal-header">Frösö Park</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
-                    molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
-                    praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa nemo
-                    ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
-                    Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
-                    tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
-                    soluta?</p>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="modal" id="tidigare-projekt-2">
-
-        <div class="modal-inner">
-
-            <div class="modal-photo">
-                <img src="img/tidigare_projekt_2.jpg" alt="">
-            </div>
-
-            <a class="modal-close" href="#tidigare-projekt">X</a>
-
-            <div class="modal-text">
-                <h1 class="modal-header">Hornsberg Strand</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
-                    molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
-                    praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa nemo
-                    ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
-                    Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
-                    tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
-                    soluta?</p>
             </div>
 
         </div>
 
-    </div>
+        <div class="modal" id="tidigare-projekt-1">
 
-    <div class="modal" id="tidigare-projekt-3">
+            <div class="modal-inner">
 
-        <div class="modal-inner">
+                <div class="modal-photo">
+                    <img src="img/tidigare_projekt_1.jpg" alt="">
+                </div>
 
-            <div class="modal-photo">
-                <img src="img/tidigare_projekt_3.jpg" alt="">
-            </div>
+                <a class="modal-close" href="#tidigare-projekt">X</a>
 
-            <a class="modal-close" href="#tidigare-projekt">X</a>
+                <div class="modal-text">
+                    <h1 class="modal-header">Frösö Park</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
+                        molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
+                        praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa
+                        nemo
+                        ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
+                        Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
+                        tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
+                        soluta?</p>
+                </div>
 
-            <div class="modal-text">
-                <h1 class="modal-header">Odensala</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
-                    molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
-                    praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa nemo
-                    ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
-                    Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
-                    tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
-                    soluta?</p>
             </div>
 
         </div>
 
-    </div>
+        <div class="modal" id="tidigare-projekt-2">
+
+            <div class="modal-inner">
+
+                <div class="modal-photo">
+                    <img src="img/tidigare_projekt_2.jpg" alt="">
+                </div>
+
+                <a class="modal-close" href="#tidigare-projekt">X</a>
+
+                <div class="modal-text">
+                    <h1 class="modal-header">Hornsberg Strand</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
+                        molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
+                        praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa
+                        nemo
+                        ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
+                        Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
+                        tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
+                        soluta?</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="modal" id="tidigare-projekt-3">
+
+            <div class="modal-inner">
+
+                <div class="modal-photo">
+                    <img src="img/tidigare_projekt_3.jpg" alt="">
+                </div>
+
+                <a class="modal-close" href="#tidigare-projekt">X</a>
+
+                <div class="modal-text">
+                    <h1 class="modal-header">Odensala</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione beatae quos voluptatibus sequi
+                        molestiae enim illum est culpa. Distinctio, sapiente. Labore fugit nesciunt et eum tempora
+                        praesentium! Quo voluptas labore cupiditate, neque modi dolores, reiciendis eius a quas culpa
+                        nemo
+                        ex non laboriosam soluta repellat illum minus error obcaecati. Omnis facilis ex amet nobis sed!
+                        Consectetur placeat quisquam architecto? Repellat, consequatur eveniet in veniam ab cupiditate
+                        tempora qui! Temporibus, repellat pariatur totam labore dolorum optio sequi aliquid laborum amet
+                        soluta?</p>
+                </div>
+
+            </div>
+
+        </div>
 
 </body>
 
